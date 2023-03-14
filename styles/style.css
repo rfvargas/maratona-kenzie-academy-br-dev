@@ -1,0 +1,273 @@
+/* Configurações gerais (classe criada com atributos que serão muito usados) */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    width: 80vw; /* largura */
+    margin: 0 auto; /* centralizar a tag */
+    height: 100%; /* altura*/
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* espaçamento interno entre os itens (função disponível somente utilizando o display flex) */
+ }
+
+/* Tela 1 */
+.home {
+    height: 800px; /* altura */
+    background-image: url('../imagens/background.svg');
+    background-repeat: no-repeat; /* não repetir a imagem de fundo */ 
+    background-size: cover; /* ocupe toda a tag e não saia dela */
+    background-position: top right; /* comece de cima e a direita */
+}
+
+/* classe pai "figure" e a "img" é filha */
+figure > img {
+    height: 144px;
+    width: 254px;
+}
+
+nav {
+    width: 70%;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* classe pai "ul" e a "img" é filha da "ul" e "li" é pai da "a" */
+ul > li > a {
+    color: var(--color-grey-2); /* essa var vem da classe :root que está no arquivo global.css */
+    font-family: Iceland;
+    font-size: 26px; /* tamanho da font */
+    font-weight: 400; /* peso/espessura da font */
+    line-height: 25px; /* altura da linha */
+    text-align: left;
+}
+
+/* ao passar o mouse por cima do link "a:hover" (tag "a") */
+ul > li > a:hover {
+    font-weight: 600; /* peso/espessura da font */
+}
+
+main {
+    width: 80vw;
+    margin: 0 auto; /* centralizar a tag */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* espaçamento interno entre os itens (função disponível somente utilizando o display flex) */
+}
+
+h1 {
+    width: 668px;
+    font-family: Iceland;
+    font-size: 92px;
+    font-weight: 400;
+    line-height: 89px;    
+    text-align: left;
+    color: var(--color-grey-2);
+}
+
+main > p {
+    width: 506px;
+    font-family: Actor;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: var(--text-color-1);
+}
+
+button {
+    height: 46px;
+    width: 180px;
+    left: 5002px;
+    top: 23px;
+    color: var(--color-grey-2);
+    margin: 10px;
+    font-family: Iceland;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer; /* ao passar o mouse por cima o cursor vira uma mãozinha para identificar possibilidade p/ clicar */
+}
+
+ .active {
+    background-color: var(--color-secondary); /* cor de fundo */
+}
+
+.active:hover {
+    border: 4px solid var(--color-grey-1); /* ao passar o mouse por cima aparece uma borda com a cor selecionada do :root */
+}
+
+.inactive {
+    background-color: var(--color-grey-1); /* cor de fundo */
+}
+
+.inactive:hover {
+    border: 2px solid var(--color-grey-2); /* ao passar o mouse por cima aparece uma borda com a cor selecionada do :root */
+}
+
+main > section {
+    margin-top: 100px;
+}
+
+h3 {
+    height: 65px;
+    width: 336px;
+    font-family: Iceland;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: var(--color-grey-2);
+}
+
+ul {
+    width: 800px;
+}
+
+section > ul > li {
+    height: 139px;
+    width: 261px;
+    background-image: url("../imagens/inside/relationship.svg");
+    background-repeat: no-repeat; /* não repetir a imagem de fundo */
+    background-size: cover;  /* ocupe toda a tag e não saia dela */
+    background-position: top right; /* comece de cima e a direita */
+}
+
+/* Tela 2 */
+.episodes {
+    height: 800px; /* altura */
+    background-image: url("../imagens/backgroundEpisodes.png");
+    background-repeat: no-repeat; /* não repetir a imagem de fundo */
+    background-size: cover;  /* ocupe toda a tag e não saia dela */
+    background-position: top right; /* comece de cima e a direita */
+}
+
+.posts {
+    height: 546px;
+    width: 479px;
+    margin-top: 80px;
+    padding: 5px; /* é usado para criar espaço ao redor do conteúdo de um elemento, dentro de qualquer borda definida */
+    text-align: justify;
+}
+
+.posts > p {
+    color: var(--color-grey-2);
+    font-family: Iceland;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.episodes-list {
+    height: 762px;
+    width: 671px;
+    margin: 0 auto;
+    overflow: auto; /* cria automaticamente uma barra de rolagem quando for necessário devido a quantidade de conteúdos*/
+}
+  
+.card {
+    height: 182px;
+    width: 650px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    background-color: var(--color-grey-3);
+}
+
+.card > img {
+    height: 120px;
+    width: 250px;
+    border-radius: 12px; /* deixar a borda arredondada */
+    color: var(--color-grey-2);
+}
+  
+.card-text {
+    width: 60%;
+    height: 80%;
+    margin: 20px;
+}
+
+/* Episodes */
+.card-text > h4 {
+    height: 30px;
+    font-family: Darker Grotesque;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: var(--color-grey-2);
+ }
+  
+.card-text > p {
+    height: 88px;
+    width: 324px;
+    left: 5690px;
+    top: 639px;
+    border-radius: nullpx;  /* borda radial/arredondada null */
+    font-family: Darker Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;    
+    text-align: left;
+    color: var(--color-grey-2);
+}
+
+/* acessando a classe ".episodes-list" e "::" para acessar uma pseudo-classe  "-webkit-scrollbar" */
+.episodes-list::-webkit-scrollbar {
+    background-color: var(--color-secondary); /* cor da barra de rolagem */
+    border-radius: 20px; /* arredondamento da barra de rolagem */
+    border: 3px solid black; /* cria preenchimento ao redor da barra de rolagem */
+}
+
+/* Tela 3 */
+footer {
+    height: 377px;
+    background: linear-gradient(180deg, #000000 0%, #950202 289.06%);
+}
+
+footer > figure > img {
+    height: 140px;
+    width: 140px;
+}
+
+.container > section > h2 {
+    height: 47px;
+    width: 668px;
+    left: 5446px;
+    font-family: Iceland;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 47px;
+    text-align: left;
+    color: var(--color-grey-2);
+  }
+  
+  .container > section > h3 {
+    height: 31px;
+    width: 449px;
+    font-family: Iceland;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: left;
+    color: var(--color-grey-2);
+    margin: 0 auto;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* espaçamento interno entre os itens (função disponível somente utilizando o display flex) */
+  }
